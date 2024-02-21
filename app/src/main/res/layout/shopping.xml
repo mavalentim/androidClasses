@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#767272"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <!-- TextView to show all items -->
+
+    <!-- Button to list all items-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="287dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Enter a trash item"
+            android:textColorHint="@color/design_default_color_primary"/>
+
+        <Button
+            android:id="@+id/list_button"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Where does this go"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="215dp"
+            android:layout_height="531dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
