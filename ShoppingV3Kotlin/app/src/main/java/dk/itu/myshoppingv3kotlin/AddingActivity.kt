@@ -12,27 +12,28 @@ class AddingActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.adding)
-        //val itemsDB = ItemsDB.get()
+        val itemsDB = ItemsDB.get()
 
         //get the views
         var inputForAddingItemName: TextView = findViewById(R.id.textEditforWhat)
         var inputForAddingItemPlace: TextView = findViewById(R.id.textEditforWhere)
 
-        //the item name and place from
-        var WhatText :String = inputForAddingItemName.text.toString()
-        Log.d("pre1", WhatText)
-        var WhereText:String = inputForAddingItemPlace.text.toString()
+
 
         //get the button that confirms it
         val ConfirmButton :Button = findViewById(R.id.addbutton)
 
         ConfirmButton.setOnClickListener{
-            //itemsDB.addItem(WhatText, WhereText) this wont help at all
+            //the item name and place from
+            val WhatText :String = inputForAddingItemName.text.toString()
+            Log.d("pre1", WhatText)
+            val WhereText:String = inputForAddingItemPlace.text.toString()
+            itemsDB.addItem(WhatText, WhereText) //this wont help at all
             Log.d("pre", WhatText)
-            val intent = Intent(this, ShoppingActivity::class.java)
-            intent.putExtra("newItem", WhatText)
-            intent.putExtra("newPlace", WhereText)
-            startActivity(intent)
+            //val intent = Intent(this, ShoppingActivity::class.java)
+            //intent.putExtra("newItem", WhatText)
+            //intent.putExtra("newPlace", WhereText)
+            finish()
         }
 
     }

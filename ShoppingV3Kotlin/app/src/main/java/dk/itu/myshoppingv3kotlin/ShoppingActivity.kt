@@ -19,7 +19,7 @@ class ShoppingActivity : AppCompatActivity() {
 
         //getting the items
         itemsDB = ItemsDB.get() //this works as a constructor it seems
-
+        Log.d("newData", "it ran again")
         val intent = intent
 
         // Get the data from the Intent extras using the same key you used in the sending activity
@@ -28,7 +28,7 @@ class ShoppingActivity : AppCompatActivity() {
 
         if(newdata!=null && newplace!=null){
             itemsDB.addItem(newdata, newplace)
-            Log.d("newData", newdata)
+
         }
 
         //Input text field
