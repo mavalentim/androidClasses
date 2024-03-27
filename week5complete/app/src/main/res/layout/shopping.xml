@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#767272"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <!-- I think this can be a container that will be filled with the fragment-->
+    <FrameLayout
+        android:id="@+id/framefs"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/revealFullList"
+        android:text="Display full list">
+
+    </Button>
+    <FrameLayout
+        android:id="@+id/frameflist"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+</LinearLayout>
