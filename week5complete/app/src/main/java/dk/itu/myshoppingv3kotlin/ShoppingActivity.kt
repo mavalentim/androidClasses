@@ -50,7 +50,7 @@ class ShoppingActivity : AppCompatActivity() {
 
         //if we are in the landscape case however, we need to automatically transact the fragment into the frame, so if we are in that landscape mode, i will automatically fill that frame with the fragment
 
-        if(resources.configuration.orientation == "LANDSCAPE")
+
 
 
     }
