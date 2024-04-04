@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+     <FrameLayout
+         android:layout_width="300dp"
+         android:layout_height="match_parent"
+         android:id="@+id/framefs">
+
+     </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/revealFullList"
+                android:text="Display full list">
+
+            </Button>
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:id="@+id/frameflist"
+                >
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
