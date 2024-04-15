@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShoppingV3Kotlin</string>
+    <string name="heading_create">Add new garbage item</string>
+    <string name="delete">Delete item</string>
+    <string name="what_item">What item? </string>
+    <string name="where">Where?</string>
+    <string name="list">Search where to throw</string>
+    <string name="empty_toast">Please type something in the what and where fields</string>
+    <string name="removed">Removed </string>
+    <string name="name_of_the_item">Name of the item :</string>
+</resources>
